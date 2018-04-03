@@ -28,6 +28,7 @@ do
 done
 
 #If there have been failures in the mount points in the for, they have been disassembled and we re-apply a mount -a so that they are assembled
+
 mount -a
 
 echo "End of script!"
