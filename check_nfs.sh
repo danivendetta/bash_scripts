@@ -11,7 +11,7 @@
 mount -a
 
 list=`cat /etc/fstab  |grep "^1" |awk '{print $2}'`
-function check_nfs_mountpoints (list){
+function check_nfs_mountpoints() {
 
   for i in $list
   do
@@ -34,6 +34,6 @@ function check_nfs_mountpoints (list){
   mount -a
 
 }
-check_nfs_mountpoints($list)
+check_nfs_mountpoints $list
 
 echo "End of script!"
